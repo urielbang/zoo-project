@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background-image: url(fotos/background5.jpg);
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  color: white;
+}
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 10% 30% 30% 30%;
+  grid-template-rows: 10% 50% 15% 25%;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar footer footer footer";
+}
+.header {
+  grid-area: header;
+  background-color: rgba(0, 0, 0, 0.685);
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: rgba(0, 0, 0, 0.685);
+  display: flex;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
+@keyframes slider {
+  0% {
+    background-image: url(fotos/background5.jpg);
+    background-size: cover;
+  }
+  35% {
+    background-image: url(fotos/background12.jpg);
+    background-size: cover;
+  }
+  70% {
+    background-image: url(fotos/background1.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(fotos/background5.jpg);
+    background-size: cover;
+  }
+}
+.header a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: center;
+  margin-right: 1%;
+}
+.header a:hover {
+  color: rgba(255, 255, 255, 0.242);
+}
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar li:hover {
+  color: rgba(255, 255, 255, 0.242);
+}
