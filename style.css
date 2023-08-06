@@ -111,3 +111,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
+.animal1 {
+  filter: grayscale(0.5);
+}
+.animal4 {
+  filter: blur(4px);
+}
+.animal6 {
+  opacity: 0.5;
+}
